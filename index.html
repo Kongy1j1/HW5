@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>
+			Calculator Demo
+		</title>
+		<link rel="stylesheet" href="calculator.css" type="text/css">
+	</head>
+	<body>
+		<div id="calculator">
+			<h1>calc U l8r</h1>
+			<div class="calculator_row">
+				<input id="number_input">
+			</div>
+			<div class="calculator_row">
+				<button id="button7" class="calcButton row1 col1">7</button>
+				<button id="button8" class="calcButton row1 col2">8</button>
+				<button id="button9" class="calcButton row1 col3">9</button>
+				<button id="buttonDivide" class="calcButton row1 col4 function">/</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button4" class="calcButton row2 col1">4</button>
+				<button id="button5" class="calcButton row2 col2">5</button>
+				<button id="button6" class="calcButton row2 col3">6</button>
+				<button id="buttonMultiply" class="calcButton row2 col4 function">*</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button1" class="calcButton row3 col1">1</button>
+				<button id="button2" class="calcButton row3 col2">2</button>
+				<button id="button3" class="calcButton row3 col3">3</button>
+				<button id="buttonAdd" class="calcButton row3 col4 function">+</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button0" class="calcButton row4 col1">0</button>
+				<button id="buttonClear" class="calcButton row4 col2 meta">C</button>
+				<button id="buttonEquals" class="calcButton row4 col3 meta">=</button>
+				<button id="buttonSubtract" class="calcButton row4 col4 function">-</button>
+			</div>
+		</div>
+		<div id="comments">
+			<h2>About this app</h2>
+			<p>Include information here about your app.</p>
+			<ul>
+				<li>Instructions: This app is created by Mingrui Huang and Vincent Wang.</li>
+        <li>This is a one-key input calculator with input by pressing SPACEBAR on key board</li>
+        We designed a single button interface to control the calculator. The cursor will automatically traverse from the first button to the last button of the calculator on the screen. The only operation for the user is when the cursor traverses to the button which the user wants to select, the user needs to press the “space” button to input it into the text box.
+        To texting our design, we respectively set the speed of the cursor as 0.5 seconds and 1.5 seconds. We designed 5 different equations that the tester needs to input, every time the tester gets the result by the calculator, the tester needs to press “C” to zero the calculator. The 5 equations are: 4+3, 7*8+6, (41+4)/9, 874*422, 456+14/2. For every equation, the tester needs to redo 3 times to get an average time.
+        <li>Mingrui Huang worked mainly on the report of tests and feedbacks, and Vincent mainly worked on the coding and tesing.</li>
+        <li>Test results: </li>
+        <li>We decided to change the scan speed: time interval: 0.5s and 1.5s.</li>
+        <li>Operation:"4 + 3 = "</li>
+        <li>0.5s: 16.5s</li>
+        <li>1.5s: 43.2s</li>
+        <li>Operation:"7 * 8 + 6 = "</li>
+        <li>0.5s: 24.2s</li>
+        <li>1.5s: 72.53s</li>
+        <li>Operation:"(41 + 4) / 9 = "</li>
+        <li>0.5s: 31.6s</li>
+        <li>1.5s: 93.46s</li>
+        <li>Operation:"874 * 422 = "</li>
+        <li>0.5s: 25.66s</li>
+        <li>1.5s: 73.84s</li>
+        <li>Operation:"(456 + 14) / 2 = "</li>
+        <li>0.5s: 32.08s</li>
+        <li>1.5s: 99.14s</li>
+				<li>Generally, the version with 0.5 seconds has much higher efficiency than the one with 1.5 seconds. Users need to wait too long to select one specific button, but all of our testers are not disable, so for people with disable, maybe 0.5 to 1.0 seconds is good enough. </li>
+			</ul>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+		<script src="calculator.js" type="text/javascript"></script>
+	</body>
+</html>
